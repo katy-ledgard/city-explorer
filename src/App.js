@@ -34,6 +34,7 @@ function App() {
   }
   return (
     <div className="App">
+      <h1>City Explorer!</h1>
       <form onSubmit={getLocation}>
        <input type="text" placeholder="Search for a city..." name="input" onChange={handleSearch}/> 
        <button type="submit">Explore!</button>
