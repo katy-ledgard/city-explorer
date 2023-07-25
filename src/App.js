@@ -29,7 +29,7 @@ function App() {
 
   function handleMap(data) {
     console.log(data)
-    const API = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_API_KEY}&center=${data.lat},${data.lon}&zoom=11g`;
+    const API = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_API_KEY}&center=${data.lat},${data.lon}&zoom=11`;
     setMap(API);
   }
   return (
