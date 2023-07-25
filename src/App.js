@@ -38,7 +38,7 @@ function App() {
        <input type="text" placeholder="Search for a city..." name="input" onChange={handleSearch}/> 
        <button type="submit">Explore!</button>
       </form>
-      <p>{location.display_name}</p>
+      <p><span className='bold'>City:</span> {location.display_name}</p>
       <p><span className='bold'>Lattitude:</span> {location.lat}</p>
       <p><span className='bold'>Longitude:</span> {location.lon}</p>
       {map && <img src={map} alt="map" />}
